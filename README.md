@@ -12,8 +12,20 @@ Measuring bias in open-source pretrained large language model: A study on the re
 Phineas Pham <br />
 pham_p1@denison.edu
 
+# Table of contents
 
-# Purpose / Project Overview
+- [Author](#author)
+- [Table of contents](#table-of-contents)
+- [Project Overview](#project-overview)
+- [Installation and Setup](#installation-and-setup)
+- [Data](#data)
+- [Code structure](#code-structure)
+- [Results and evaluation](#results-and-evaluation)
+- [Future work](#future-work)
+- [Acknowledgments and references](#acknowledgments-and-references)
+- [License](#license)
+
+# Project Overview
 
 In this section you should provide a brief overview of the project, what it is about, and what it aims to achieve. This will help readers quickly understand what the project is all about.
 
@@ -22,6 +34,8 @@ In this section you should provide a brief overview of the project, what it is a
 In this section, provide detailed instructions on how to set up the project on a local machine. This includes any necessary dependencies, software requirements, and installation steps. Make sure to include clear and concise instructions so that others can easily replicate your setup.
 
 I like to structure it as below - 
+
+
 ## Codes and Resources Used
 In this section I give user the necessary information about the software requirements.
 - **Editor Used:**  Informing the user of the editor used to produce the project.
@@ -37,7 +51,6 @@ In this section, I include all the necessary dependencies needed to reproduce th
 The level of granularity you want to provide for the above list is entirely up to you. You can also add a few more levels, such as those for statistical analysis or data preparation, or you can simply incorporate them into the above list as is.
 
 # Data
-
 
 ## Source Data
 StereoSet
@@ -78,7 +91,7 @@ Provide an overview of the results of your project, including any relevant metri
 # Future work
 Outline potential future work that can be done to extend the project or improve its functionality. This will help others understand the scope of your project and identify areas where they can contribute.
 
-# Acknowledgments/References
+# Acknowledgments and references
 Acknowledge any contributors, data sources, or other relevant parties who have contributed to the project. This is an excellent way to show your appreciation for those who have helped you along the way.
 
 For instance, I am referencing the image that I used for my readme header - 
