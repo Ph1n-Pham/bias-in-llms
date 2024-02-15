@@ -1,6 +1,7 @@
 # bias-in-llms
 Measuring bias in open-source pretrained large language model: A study on the relationship between trained data characteristics and model size on language models’ bias 
 
+<!--- generate tag here: https://shields.io/badges --->
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/pragyy/datascience-readme-template?include_prereleases)
 ![GitHub last commit](https://img.shields.io/badge/last_commit-april_2024-blue)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/pragyy/datascience-readme-template)
