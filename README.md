@@ -28,7 +28,8 @@ pham_p1@denison.edu
 
 # Project Overview
 
-In this section you should provide a brief overview of the project, what it is about, and what it aims to achieve. This will help readers quickly understand what the project is all about.
+## Background:
+Large language models (LLMs), products of the ongoing evolution in deep learning and neural networks, have emerged as prominent entities within the technological sphere. While language models have undergone years of development, a pivotal moment occurred in 2017 when Google introduced its groundbreaking research paper titled "Attention is All You Need," (A Brief History of Large Language Models (LLM) | LinkedIn, n.d.) alongside the revolutionary Transformer architecture (Gupta, 202). This innovative architecture laid the groundwork for the creation of one of the most renowned LLM applications, ChatGPT, which debuted in June 2020 (Marr, n.d.). Since then, the ever-expanding capabilities of LLMs have facilitated the development of a plethora of fascinating applications spanning diverse domains, including language generation, translation, question-answering, and summarization. However, with the widespread adoption of LLMs and their impressive performance, concerns have arisen regarding their potential to perpetuate and exacerbate social biases present within their output. Consequently, bias has emerged as one of the most significant social issues associated with LLMs. In response to this challenge, researchers have redirected their focus toward designing frameworks and solutions aimed at quantifying and mitigating social bias in LLMs. This research endeavors to address this critical issue, necessitating a comprehensive understanding of how both data characteristics and model size influence the bias present in LLMs.
 
 # Installation and Setup
 
@@ -95,10 +96,41 @@ Outline potential future work that can be done to extend the project or improve 
 # Acknowledgments and references
 Acknowledge any contributors, data sources, or other relevant parties who have contributed to the project. This is an excellent way to show your appreciation for those who have helped you along the way.
 
-For instance, I am referencing the image that I used for my readme header - 
-- Image by [rashadashurov](https://www.vectorstock.com/royalty-free-vector/data-science-cartoon-template-with-flat-elements-vector-27984292)
+I want to thank Dr. Supp and Denison Data Analytics Department for guidance and mentorship throughtout the project.
+
+Ohio Supercomputer Center for providing computing services.
+
+## References:
+
+A Brief History of Large Language Models (LLM) | LinkedIn. (n.d.). Retrieved February 8, 2024, from https://www.linkedin.com/pulse/brief-history-large-language-models-llm-feiyu-chen/ <br />
+
+Dong, X., Wang, Y., Yu, P. S., & Caverlee, J. (2023). Probing Explicit and Implicit Gender Bias through LLM Conditional Text Generation (arXiv:2311.00306). arXiv. https://doi.org/10.48550/arXiv.2311.00306 <br />
+
+Explained: Neural networks. (2017, April 14). MIT News | Massachusetts Institute of Technology. https://news.mit.edu/2017/explained-neural-networks-deep-learning-0414 <br />
+
+Gallegos, I. O., Rossi, R. A., Barrow, J., Tanjim, M. M., Kim, S., Dernoncourt, F., Yu, T., Zhang, R., & Ahmed, N. K. (2023). Bias and Fairness in Large Language Models: A Survey (arXiv:2309.00770). arXiv. https://doi.org/10.48550/arXiv.2309.00770<br />
+
+
+Gupta, M. (2024, February 1). What are LLMs? Understanding different LLM families. Data Science in Your Pocket. https://medium.com/data-science-in-your-pocket/what-are-llms-understanding-different-llm-families-48b030c2e4fb<br />
+
+
+Large language model. (2024). In Wikipedia. https://en.wikipedia.org/w/index.php?title=Large_language_model&oldid=1204963851<br />
+
+
+Liang, P. P., Wu, C., Morency, L.-P., & Salakhutdinov, R. (2021). Towards Understanding and Mitigating Social Biases in Language Models. Proceedings of the 38th International Conference on Machine Learning, 6565–6576. https://proceedings.mlr.press/v139/liang21a.html<br />
+
+
+Marr, B. (n.d.). A Short History Of ChatGPT: How We Got To Where We Are Today. Forbes. Retrieved February 9, 2024, from https://www.forbes.com/sites/bernardmarr/2023/05/19/a-short-history-of-chatgpt-how-we-got-to-where-we-are-today/<br />
+
+
+Nadeem, M., Bethke, A., & Reddy, S. (2020). StereoSet: Measuring stereotypical bias in pretrained language models (arXiv:2004.09456). arXiv. https://doi.org/10.48550/arXiv.2004.09456<br />
+
+
+Nangia, N., Vania, C., Bhalerao, R., & Bowman, S. R. (2020). CrowS-Pairs: A Challenge Dataset for Measuring Social Biases in Masked Language Models (arXiv:2010.00133). arXiv. https://doi.org/10.48550/arXiv.2010.00133<br />
+
+
+Open Source Licenses: Types and Comparison. (n.d.). Snyk. Retrieved February 9, 2024, from https://snyk.io/learn/open-source-licenses/
+
 
 # License
-Specify the license under which your code is released. Moreover, provide the licenses associated with the dataset you are using. This is important for others to know if they want to use or contribute to your project. 
-
-For this github repository, the License used is [MIT License](https://opensource.org/license/mit/).
+The License used is [MIT License](https://opensource.org/license/mit/).
