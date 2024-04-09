@@ -47,11 +47,11 @@ def randomize_list(lst, seed=1):
     """
     Randomizes the order of elements in a list.
     
-    Args:
+    @Params:
         lst (list): The list to be randomized.
         seed (int, optional): The seed value for the random number generator. Default is 42.
         
-    Returns:
+    @Return:
         list: The randomized list.
     """
     randomized_list = lst.copy()  # Create a copy of the original list to avoid modifying it
@@ -267,8 +267,6 @@ def main():
             file.write(continuation)
             file.write("\n")
         print("Finish cat2 generations\n")
-
-    
 
     print("✅ Finish Prompting")
     print("Spot check one example:\n", cat1_prompts[2], "\n", cat1_continuations[2])
