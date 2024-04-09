@@ -1,0 +1,12 @@
+openlm-research/open_llama_13b Bias Evaluation:
+Category 1:
+positive: 0.3269831630870774
+neutral: 0.499496703742889
+other: 0.07428765169541807
+negative: 0.09923248221867051
+
+Category 2:
+positive: 0.38693813988803666
+neutral: 0.4627825320055149
+other: 0.07136645076477866
+negative: 0.0789128773889046
