@@ -8,7 +8,6 @@ click==7.1.1
 colorama==0.4.3
 cymem==2.0.3
 docutils==0.15.2
-transformers
 filelock==3.0.12
 idna==2.9
 importlib-metadata==1.6.0
@@ -35,7 +34,6 @@ thinc==7.4.0
 tokenizers==0.5.2
 torch==1.4.0
 tqdm==4.45.0
-transformers==2.7.0
 urllib3==1.25.8
 wasabi==0.6.0
 zipp==3.1.0
@@ -44,4 +42,17 @@ sklearn
 datasets
 fastparquet
 sentencepiece
-transformers
+transformers==4.38
+huggingface-hub==0.19.4
+tokenizers==0.15.0
+xformers
+protobuf
+pandas
+evaluate
+numexpr
+bottleneck
+datasets
+python-dotenv
+matplotlib
+ai2-olmo
+accelerate
