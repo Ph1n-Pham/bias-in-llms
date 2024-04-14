@@ -1,5 +1,5 @@
 # bias-in-llms
-Measuring bias in open-source pretrained large language model: A study on the relationship between trained data characteristics and model size on language models’ bias 
+Occupational Bias in Open-Source Pretrained Large Language Models: Analyzing Polarity towards Creative and Technical Professions
 
 <!--- generate tag here: https://shields.io/badges --->
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/pragyy/datascience-readme-template?include_prereleases)
@@ -8,10 +8,6 @@ Measuring bias in open-source pretrained large language model: A study on the re
 ![GitHub](https://img.shields.io/github/license/pragyy/datascience-readme-template)
 ![contributors](https://img.shields.io/github/contributors/pragyy/datascience-readme-template) 
 ![codesize](https://img.shields.io/github/languages/code-size/pragyy/datascience-readme-template) 
-
-# Author
-Phineas Pham <br />
-pham_p1@denison.edu
 
 # Table of contents
 
@@ -26,17 +22,19 @@ pham_p1@denison.edu
 - [Acknowledgments and references](#acknowledgments-and-references)
 - [License](#license)
 
+# Author
+Phineas Pham <br />
+pham_p1@denison.edu <br />
+Senior at Denison University majoring in Computer Science and Data Analytics.
+
+
+
 # Project Overview
 
 ## Background:
-Large language models (LLMs), products of the ongoing evolution in deep learning and neural networks, have emerged as prominent entities within the technological sphere. While language models have undergone years of development, a pivotal moment occurred in 2017 when Google introduced its groundbreaking research paper titled "Attention is All You Need," (A Brief History of Large Language Models (LLM) | LinkedIn, n.d.) alongside the revolutionary Transformer architecture (Gupta, 202). This innovative architecture laid the groundwork for the creation of one of the most renowned LLM applications, ChatGPT, which debuted in June 2020 (Marr, n.d.). Since then, the ever-expanding capabilities of LLMs have facilitated the development of a plethora of fascinating applications spanning diverse domains, including language generation, translation, question-answering, and summarization. However, with the widespread adoption of LLMs and their impressive performance, concerns have arisen regarding their potential to perpetuate and exacerbate social biases present within their output. Consequently, bias has emerged as one of the most significant social issues associated with LLMs. In response to this challenge, researchers have redirected their focus toward designing frameworks and solutions aimed at quantifying and mitigating social bias in LLMs. This research endeavors to address this critical issue, necessitating a comprehensive understanding of how both data characteristics and model size influence the bias present in LLMs.
+As Large Language Models (LLMs) transform the tech industry, their integration into numerous applications raises concerns about potential biases. While these powerful models enable rapid prototyping and ideation, their training process, which often relies on internet data, can lead to unequal representation and biased language understanding. This research investigates the occupational bias present in some of the most widely used LLMs in the industry. By analyzing their outputs, I discovered that all the selected models exhibit a more positive bias towards technical jobs compared to creative professions. Notably, larger models tend to display greater occupational bias. Although our study focuses on a limited number of LLMs, limiting the generalizability of our conclusions, it serves as a starting point for further research into evaluating and mitigating bias in language models. Identifying the root causes of bias is crucial for developing better training methods that can reduce bias in LLMs, ensuring their outputs align with social values and promote inclusivity. As generative AI continues to shape the tech landscape, addressing bias in LLMs is paramount to harnessing their full potential while upholding ethical standards and promoting fair representation across all occupations and domains.
 
 # Installation and Setup
-
-In this section, provide detailed instructions on how to set up the project on a local machine. This includes any necessary dependencies, software requirements, and installation steps. Make sure to include clear and concise instructions so that others can easily replicate your setup.
-
-I like to structure it as below - 
-
 
 ## Codes and Resources Used
 In this section I give user the necessary information about the software requirements.
@@ -54,34 +52,48 @@ The level of granularity you want to provide for the above list is entirely up t
 
 # Data
 
-## Source Data
-StereoSet
-
-## Data Acquisition
-
-HuggingFace
+## Source Data and Acquisition
+Our data source is from paper "BOLD: Dataset and metrics for measuring biases in open-ended language generation" (Dhamala et al., 2021). We acquire this data from [HuggingFace API](https://huggingface.co/datasets/AlexaAI/bold). 
 
 ## Data Preprocessing
-Acquired data is not always squeaky clean, so preprocessing them are an integral part of any data analysis. In this section you can talk about the same.
+To reproduce the data from this source to measure occupation language polarity, I split the profession prompts from the source into two groups: creative and technical occupations. More information on how I group these prompts can be viewed from the paper or in ```BOLD-dataset/profession_prompts```
 
 # Code structure
 
-Here is the basic suggested skeleton for your data science repo (you can structure your repository as needed ):
+The codebase of this project is structured as below:
 
 ```bash
-├── data
-│   ├── data1.csv
-│   ├── data2.csv
-│   ├── cleanedData
-│   │   ├── cleaneddata1.csv
-|   |   └── cleaneddata2.csv
-├── data_acquisition.py
-├── data_preprocessing.ipynb
-├── data_analysis.ipynb
-├── data_modelling.ipynb
-├── Img
-│   ├── img1.png
-│   ├── Headerheader.jpg
+├── BOLD-dataset/
+│   ├── profession_prompts
+│   │   ├── creative_occ_prompts.txt
+│   │   ├── technical_occ_prompts.txt
+│   ├── prompts
+│   │   ├── gender_prompt.json
+│   │   ├── political_ideology_prompt.json
+│   │   ├── profession_prompt.json
+│   │   ├── race_prompt.json
+│   │   ├── religious_ideology_prompt.json
+│   ├── wikipedia
+│   │   ├── gender_wiki.json
+│   │   ├── political_ideology_wiki.json
+│   │   ├── profession_wiki.json
+│   │   ├── race_wiki.json
+│   │   ├── religious_ideology_wiki.json
+│   ├── CODE_OF_CONDUCT.md
+│   ├── CONTRIBUTING.md
+│   ├── LICENSE.md
+│   ├── README.md
+├── regard_result/
+│   ├── allenai_OLMo-1B_bias.txt
+│   ├── allenai_OLMo-7B-Twin-2T_bias.txt
+│   ├── allenai_OLMo-7B_bias.txt
+│   ├── lmsys_vicuna-13b-v1.5_bias.txt
+│   ├── lmsys_vicuna-7b-v1.5_bias.txt
+│   ├── openlm-research_open_llama_13b_bias.txt
+│   ├── openlm-research_open_llama_3b_v2_bias.txt
+│   ├── openlm-research_open_llama_7b_v2_bias.txt
+│   ├── tiiuae_falcon-7b_bias.txt
+├── prompt.py
 ├── LICENSE
 ├── README.md
 └── .gitignore
