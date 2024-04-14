@@ -34,21 +34,48 @@ Senior at Denison University majoring in Computer Science and Data Analytics.
 ## Background:
 As Large Language Models (LLMs) transform the tech industry, their integration into numerous applications raises concerns about potential biases. While these powerful models enable rapid prototyping and ideation, their training process, which often relies on internet data, can lead to unequal representation and biased language understanding. This research investigates the occupational bias present in some of the most widely used LLMs in the industry. By analyzing their outputs, I discovered that all the selected models exhibit a more positive bias towards technical jobs compared to creative professions. Notably, larger models tend to display greater occupational bias. Although our study focuses on a limited number of LLMs, limiting the generalizability of our conclusions, it serves as a starting point for further research into evaluating and mitigating bias in language models. Identifying the root causes of bias is crucial for developing better training methods that can reduce bias in LLMs, ensuring their outputs align with social values and promote inclusivity. As generative AI continues to shape the tech landscape, addressing bias in LLMs is paramount to harnessing their full potential while upholding ethical standards and promoting fair representation across all occupations and domains.
 
-# Installation and Setup
+# Quickstart
 
-## Codes and Resources Used
-In this section I give user the necessary information about the software requirements.
-- **Editor Used:**  Informing the user of the editor used to produce the project.
-- **Python Version:** Informing the user of the version of python used for this project. If you are using some other language such as R, you can mention that as well.
+This repository contains the codebase to reproduce the results in the paper.
 
-## Python Packages Used
-In this section, I include all the necessary dependencies needed to reproduce the project, so that the reader can install them before replicating the project. I categorize the long list of packages used as - 
-- **General Purpose:** General purpose packages like `urllib, os, request`, and many more.
-- **Data Manipulation:** Packages used for handling and importing dataset such as `pandas, numpy` and others.
-- **Data Visualization:** Include packages which were used to plot graphs in the analysis or for understanding the ML modelling such as `seaborn, matplotlib` and others.
-- **Machine Learning:** This includes packages that were used to generate the ML model such as `scikit, tensorflow`, etc.
+## Prerequisites
 
-The level of granularity you want to provide for the above list is entirely up to you. You can also add a few more levels, such as those for statistical analysis or data preparation, or you can simply incorporate them into the above list as is.
+Before you begin, make sure you have the following installed:
+  - Git
+  - Conda (or any other Python environment manager)
+
+
+#### Step 1: Clone the Repository
+
+Open your terminal or command prompt and navigate to the directory where you want to clone the repository. Then, run the following command:
+```
+git clone https://github.com/Ph1n-Pham/bias-in-llms.git
+```
+
+#### Step 2: Create a Conda Environment
+
+Next, create a new Conda environment and install the required dependencies. Navigate to the cloned repository and run the following commands:
+```
+conda create -n myenv python=3.10
+conda activate myenv
+pip install -r requirements.txt
+```
+This will create a new Conda environment named myenv with Python 3.10 and install the required packages listed in the requirements.txt file.
+
+#### Step 3: Run the Sample Script
+Once the dependencies are installed, you can run the sample script prompt.py to generate text based on a given prompt and reproduce regard results for the predefined models. Navigate to the repository's root directory and run the following command:
+```
+python prompt.py
+```
+
+#### Contributing:
+If you'd like to contribute to this project, please follow the standard GitHub workflow:
+
+- Fork the repository
+- Create a new branch (git checkout -b feature/your-feature)
+- Commit your changes (git commit -am 'Add some feature')
+- Push to the branch (git push origin feature/your-feature)
+- Create a new Pull Request
 
 # Data
 
@@ -105,43 +132,99 @@ Provide an overview of the results of your project, including any relevant metri
 # Future work
 Outline potential future work that can be done to extend the project or improve its functionality. This will help others understand the scope of your project and identify areas where they can contribute.
 
-# Acknowledgments and references
-Acknowledge any contributors, data sources, or other relevant parties who have contributed to the project. This is an excellent way to show your appreciation for those who have helped you along the way.
+# Acknowledgments and references: 
+I would like to express my deepest appreciation to Dr. Sarah Supp and Dr. Matthew Lavin from the Denison University Data Analytics Program for their supervision and feedback throughout the project. Additionally, this endeavor would not have been possible without the computing resources from the Ohio Supercomputer Center and the Denison Computer Science Department. 
 
-I want to thank Dr. Supp and Denison Data Analytics Department for guidance and mentorship throughtout the project.
+I am also grateful to my friends Hung Tran and Linda Contreras Garcia for their writing help, late-night study sessions, and emotional support. Their support, in many ways, helps keep pushing the research forward throughout the semester. 
 
-Ohio Supercomputer Center for providing computing services.
+Lastly, words cannot express my gratitude to my family members, especially my mom. Their belief in me kept me motivated during downtimes throughout the project.
+
 
 ## References:
 
 A Brief History of Large Language Models (LLM) | LinkedIn. (n.d.). Retrieved February 8, 2024, from https://www.linkedin.com/pulse/brief-history-large-language-models-llm-feiyu-chen/ <br />
 
-Dong, X., Wang, Y., Yu, P. S., & Caverlee, J. (2023). Probing Explicit and Implicit Gender Bias through LLM Conditional Text Generation (arXiv:2311.00306). arXiv. https://doi.org/10.48550/arXiv.2311.00306 <br />
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., ... & Polosukhin, I. (2017). Attention is all you need. Advances in neural information processing systems, 30.<br />
 
-Explained: Neural networks. (2017, April 14). MIT News | Massachusetts Institute of Technology. https://news.mit.edu/2017/explained-neural-networks-deep-learning-0414 <br />
+OpenAI. (2022, November 30). ChatGPT: Optimizing Language Models for Dialogue. https://openai.com/blog/chatgpt/<br />
 
-Gallegos, I. O., Rossi, R. A., Barrow, J., Tanjim, M. M., Kim, S., Dernoncourt, F., Yu, T., Zhang, R., & Ahmed, N. K. (2023). Bias and Fairness in Large Language Models: A Survey (arXiv:2309.00770). arXiv. https://doi.org/10.48550/arXiv.2309.00770<br />
+Radford, A., Wu, J., Child, R., Luan, D., Amodei, D., & Sutskever, I. (2019). Language models are unsupervised multitask learners. OpenAI blog, 1(8), 9.<br />
+
+Khashabi, D., Khot, T., Sabharwal, A., Clark, P., Etzioni, O., & Roth, D. (2020). Unifiedqa: Crossing format boundaries with a single qa system. arXiv preprint arXiv:2005.00700.<br />
+
+Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021). On the dangers of stochastic parrots: Can language models be too big?. Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency.<br />
+
+Sheng, E., Chang, K. W., Natarajan, P., & Peng, N. (2019). The woman worked as a babysitter: On biased word embeddings. arXiv preprint arXiv:1905.09866.<br />
+
+Liang, P. P., Wu, C., Baral, C., & Tian, Y. (2022). Towards understanding and mitigating social biases in language models. arXiv preprint arXiv:2202.08918.<br />
+
+Dinan, E., Roller, S., Shuster, K., Fan, A., Boureau, Y. L., & Weston, J. (2019). Wizard of wikipedia: Knowledge-powered conversational agents. arXiv preprint arXiv:1811.01241.<br />
+
+Rosenblatt, F. (1958). The perceptron: a probabilistic model for information storage and organization in the brain. Psychological review, 65(6), 386.<br />
+
+McCulloch, W. S., & Pitts, W. (1943). A logical calculus of the ideas immanent in nervous activity. The bulletin of mathematical biophysics, 5(4), 115-133.<br />
+
+Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., ... & Amodei, D. (2020). Language models are few-shot learners. arXiv preprint arXiv:2005.14165.<br />
+
+Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., ... & Liu, P. J. (2020). Exploring the limits of transfer learning with a unified text-to-text transformer. arXiv preprint arXiv:1910.10683.<br />
+
+Beltagy, I., Peters, M. E., & Cohan, A. (2020). Longformer: The long-document transformer. arXiv preprint arXiv:2004.05150.<br />
+
+Free Software Foundation. (2007). GNU General Public License. https://www.gnu.org/licenses/gpl-3.0.en.html<br />
+
+Massachusetts Institute of Technology. (n.d.). The MIT License. https://opensource.org/licenses/MIT<br />
+
+Blodgett, S. L., Barocas, S., Daumé III, H., & Wallach, H. (2020). Language (technology) is power: A critical survey of "bias" in NLP. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (pp. 5454-5476).<br />
+
+Bolukbasi, T., Chang, K. W., Zou, J. Y., Saligrama, V., & Kalai, A. T. (2016). Man is to computer programmer as woman is to homemaker? Debiasing word embeddings. Advances in neural information processing systems, 29.<br />
+
+OpenLM-Research. (2023). Open_llama [GitHub repository]. https://github.com/openlm-research/open_llama<br />
+
+Groeneveld, D., Kharitonov, E., Hanina, A., Sharir, O., Patu, K., Majumder, O., ... & Shoham, Y. (2024). OLMo: Open Language Models. arXiv preprint arXiv:2304.01256.<br />
+
+Lowe, R., Ananyeva, M., Blackwood, R., Chmait, N., Foley, J., Hsu, M., ... & Zellers, R. (2023). Vicuna: An Open-Source Chatbot Impressing Humans in the Wild. arXiv preprint arXiv:2303.09592.<br />
+
+Almazrouei, M., Elhajj, I. H., Alqudah, A., Alqudah, A., & Alsmadi, I. (2023). Falcon: A 180 Billion Parameter Open-Source Language Model. arXiv preprint arXiv:2304.07142.<br />
+
+Tan, S., Tunuguntla, D., & van der Wal, O. (2022). You reap what you sow: On the Challenges of Bias Evaluation Under Multilingual Settings. https://openreview.net/forum?id=rK-7NhfSIW5<br />
+
+Tatman, R. (2017). Gender and Dialect Bias in YouTube's Automatic Captions. Proceedings of the First ACL Workshop on Ethics in Natural Language Processing, 53-59. https://doi.org/10.18653/v1/W17-1606<br />
+
+Tripodi, F. (2023). Ms. Categorized: Gender, notability, and inequality on Wikipedia. New Media & Society, 25(7), 1687-1707.<br />
+
+Turpin, M., Michael, J., Perez, E., & Bowman, S.R. (2023). Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting. arXiv:2305.04388<br />
+
+U.S. Bureau of Labor Statistics. (2022). Employed persons by detailed occupation, sex, race, and Hispanic or Latino ethnicity. 
+https://www.bls.gov/cps/cpsaat11.htm<br />
+
+Vanmassenhove, E., Hardmeier, C., & Way, A. (2018). Getting Gender Right in Neural Machine Translation. Proceedings of EMNLP 2018, 3003-3008. 
+https://doi.org/10.18653/v1/D18-1334<br />
+
+Venkit, P.N., Gautam, S., Panchanadikar, R., Huang, T.H., & Wilson, S. (2023). Nationality Bias in Text Generation. arXiv:2302.02463<br />
+
+Venkit, P.N., Srinath, M., & Wilson, S. (2022). A Study of Implicit Bias in Pretrained Language Models against People with Disabilities. Proceedings of COLING 2022, 1324-1332.<br />
+
+Dhamala, J., Sun, T., Kumar, V., Krishna, S., Pruksachatkun, Y., Chang, K.-W., & Gupta, R. (2021). BOLD: Dataset and metrics for measuring biases in open-ended language generation. Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency, 862-872. https://doi.org/10.1145/3442188.3445924<br />
+
+Caliskan, A., Bryson, J. J., & Narayanan, A. (2017). Semantics derived automatically from language corpora contain human-like biases. Science, 356(6334), 183-186.<br />
+
+Sap, M., Card, D., Gabriel, S., Choi, Y., & Smith, N. A. (2019). The risk of racial bias in hate speech detection. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (pp. 1668-1678).<br />
+
+Sheng, E., Chang, K. W., Natarajan, P., & Peng, N. (2021). The Societal Biases in Language Datasets and their Impact on Model Prediction. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers) (pp. 1711-1724).<br />
+
+Mukaka, M. M. (2012). A guide to appropriate use of correlation coefficient in medical research. Malawi Medical Journal, 24(3), 69-71.<br />
+
+Sedgwick, P. (2012). Pearson's correlation coefficient. BMJ, 345, e4483. https://doi.org/10.1136/bmj.e4483<br />
+
+Taylor, R. (1990). Interpretation of the correlation coefficient: A basic review. Journal of Diagnostic<br />
+
+Medical Sonography, 6(1), 35-39. 
+https://doi.org/10.1177/875647939000600106<br />
+
+Wasserstein, R. L., & Lazar, N. A. (2016). The ASA statement on p-values: Context, process, and purpose. The American Statistician, 70(2), 129-133. 
+https://doi.org/10.1080/00031305.2016.1154108<br />
 
 
-Gupta, M. (2024, February 1). What are LLMs? Understanding different LLM families. Data Science in Your Pocket. https://medium.com/data-science-in-your-pocket/what-are-llms-understanding-different-llm-families-48b030c2e4fb<br />
-
-
-Large language model. (2024). In Wikipedia. https://en.wikipedia.org/w/index.php?title=Large_language_model&oldid=1204963851<br />
-
-
-Liang, P. P., Wu, C., Morency, L.-P., & Salakhutdinov, R. (2021). Towards Understanding and Mitigating Social Biases in Language Models. Proceedings of the 38th International Conference on Machine Learning, 6565–6576. https://proceedings.mlr.press/v139/liang21a.html<br />
-
-
-Marr, B. (n.d.). A Short History Of ChatGPT: How We Got To Where We Are Today. Forbes. Retrieved February 9, 2024, from https://www.forbes.com/sites/bernardmarr/2023/05/19/a-short-history-of-chatgpt-how-we-got-to-where-we-are-today/<br />
-
-
-Nadeem, M., Bethke, A., & Reddy, S. (2020). StereoSet: Measuring stereotypical bias in pretrained language models (arXiv:2004.09456). arXiv. https://doi.org/10.48550/arXiv.2004.09456<br />
-
-
-Nangia, N., Vania, C., Bhalerao, R., & Bowman, S. R. (2020). CrowS-Pairs: A Challenge Dataset for Measuring Social Biases in Masked Language Models (arXiv:2010.00133). arXiv. https://doi.org/10.48550/arXiv.2010.00133<br />
-
-
-Open Source Licenses: Types and Comparison. (n.d.). Snyk. Retrieved February 9, 2024, from https://snyk.io/learn/open-source-licenses/
 
 
 # License
