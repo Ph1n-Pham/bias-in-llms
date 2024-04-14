@@ -130,7 +130,8 @@ The codebase of this project is structured as below:
 Provide an overview of the results of your project, including any relevant metrics and graphs. Include explanations of any evaluation methodologies and how they were used to assess the quality of the model. You can also make it appealing by including any pictures of your analysis or visualizations.
 
 # Future work
-Outline potential future work that can be done to extend the project or improve its functionality. This will help others understand the scope of your project and identify areas where they can contribute.
+This research serves as a starting point for further investigations into the root causes of bias in language models and the development of strategies to build more equitable and socially responsible AI systems. By fostering interdisciplinary collaborations between computer scientists, social scientists, and domain experts, we can work towards creating language models that truly reflect the diversity and richness of human experiences, free from the constraints of historical biases and prejudices. Ultimately, the goal should be to harness the immense potential of LLMs while ensuring that their outputs align with societal values of fairness, inclusivity, and respect for all individuals and communities, regardless of their chosen profession or creative pursuits.
+
 
 # Acknowledgments and references: 
 I would like to express my deepest appreciation to Dr. Sarah Supp and Dr. Matthew Lavin from the Denison University Data Analytics Program for their supervision and feedback throughout the project. Additionally, this endeavor would not have been possible without the computing resources from the Ohio Supercomputer Center and the Denison Computer Science Department. 
@@ -228,4 +229,4 @@ https://doi.org/10.1080/00031305.2016.1154108<br />
 
 
 # License
-The License used is [MIT License](https://opensource.org/license/mit/).
+This project is licensed under the [MIT License](https://opensource.org/license/mit/).
