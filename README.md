@@ -65,8 +65,10 @@ This will create a new Conda environment named myenv with Python 3.10 and instal
 #### Step 3: Run the Sample Script
 Once the dependencies are installed, you can run the sample script prompt.py to generate text based on a given prompt and reproduce regard results for the predefined models. Navigate to the repository's root directory and run the following command:
 ```
-python prompt.py
+python prompt.py --model_path openlm-research/open_llama_3b_v2 --tokenizer_path openlm-research/open_llama_3b_v2 
 ```
+
+This command will use prompt.py to prompt model openlm-research/open_llama_3b_v2 and its tokenizer openlm-research/open_llama_3b_v2 from HuggingFace API and reproduce regard result for this model. Other example commands can be viewed from ```job.sh``` to reproduce other models used in this project.
 
 #### Contributing:
 If you'd like to contribute to this project, please follow the standard GitHub workflow:
