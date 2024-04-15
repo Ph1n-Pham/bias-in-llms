@@ -129,7 +129,7 @@ The codebase of this project is structured as below:
 ```
 
 # Results and evaluation
-Provide an overview of the results of your project, including any relevant metrics and graphs. Include explanations of any evaluation methodologies and how they were used to assess the quality of the model. You can also make it appealing by including any pictures of your analysis or visualizations.
+...
 
 # Future work
 This research serves as a starting point for further investigations into the root causes of bias in language models and the development of strategies to build more equitable and socially responsible AI systems. By fostering interdisciplinary collaborations between computer scientists, social scientists, and domain experts, we can work towards creating language models that truly reflect the diversity and richness of human experiences, free from the constraints of historical biases and prejudices. Ultimately, the goal should be to harness the immense potential of LLMs while ensuring that their outputs align with societal values of fairness, inclusivity, and respect for all individuals and communities, regardless of their chosen profession or creative pursuits.
