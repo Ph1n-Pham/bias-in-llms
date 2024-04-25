@@ -128,7 +128,7 @@ The codebase of this project is structured as below:
 └── .gitignore
 ```
 
-# Results and evaluation
+# Results and evaluation (in progress)
 ...
 
 # Future work
