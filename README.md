@@ -182,7 +182,9 @@ The codebase of this project is structured as below:
 # Results and evaluation (in progress)
 
 ## Language Polarity towards Technical Occupations
+
 ![Occupational Bias Result](./asset/paper_result.png)
+
 Overall, all selected models exhibit a difference of positive scores less than 0. This shows that all models are biased in generating more positive responses for prompts for technical jobs than creative ones. While negative scores are insignificant (less than 0.05), most of the negative scores are positive, meaning that these models also give more negative responses for creative jobs than technical ones. 
 
 
