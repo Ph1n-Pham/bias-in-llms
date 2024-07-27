@@ -1,5 +1,8 @@
 # bias-in-llms
 Occupational Bias in Open-Source Pretrained Large Language Models: Analyzing Polarity towards Creative and Technical Professions
+Student Researcher: Minh Phuc (Phineas) Pham <br />
+Supervisor: Dr. Sarah Supp
+
 
 <!--- generate tag here: https://shields.io/badges --->
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/pragyy/datascience-readme-template?include_prereleases)
@@ -23,7 +26,7 @@ Occupational Bias in Open-Source Pretrained Large Language Models: Analyzing Pol
 - [License](#license)
 
 # Author
-Phineas Pham <br />
+Minh Phuc (Phineas) Pham <br />
 pham_p1@denison.edu <br />
 Senior at Denison University majoring in Computer Science and Data Analytics.
 
