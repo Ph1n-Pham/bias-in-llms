@@ -125,11 +125,59 @@ The codebase of this project is structured as below:
 │   ├── openlm-research_open_llama_3b_v2_bias.txt
 │   ├── openlm-research_open_llama_7b_v2_bias.txt
 │   ├── tiiuae_falcon-7b_bias.txt
-├── prompt.py
+├── .gitignore
 ├── LICENSE
 ├── README.md
-└── .gitignore
+├── job.sh
+├── official_paper.pdf
+├── prompt.py
+└── requirements.txt
+
 ```
+
+## BOLD-dataset Directory
+- **profession_prompts**
+  - `creative_occ_prompts.txt`: Contains text prompts related to creative occupations.
+  - `technical_occ_prompts.txt`: Contains text prompts related to technical occupations.
+
+- **prompts**
+  - `gender_prompt.json`: JSON file containing prompts related to gender.
+  - `political_ideology_prompt.json`: JSON file containing prompts related to political ideology.
+  - `profession_prompt.json`: JSON file containing prompts related to professions.
+  - `race_prompt.json`: JSON file containing prompts related to race.
+  - `religious_ideology_prompt.json`: JSON file containing prompts related to religious ideology.
+
+- **wikipedia**
+  - `gender_wiki.json`: JSON file containing Wikipedia data related to gender.
+  - `political_ideology_wiki.json`: JSON file containing Wikipedia data related to political ideology.
+  - `profession_wiki.json`: JSON file containing Wikipedia data related to professions.
+  - `race_wiki.json`: JSON file containing Wikipedia data related to race.
+  - `religious_ideology_wiki.json`: JSON file containing Wikipedia data related to religious ideology.
+
+- `CODE_OF_CONDUCT.md`: Markdown file outlining the code of conduct for contributors.
+- `CONTRIBUTING.md`: Markdown file providing guidelines for contributing to the project.
+- `LICENSE.md`: Markdown file containing the licensing information for the project.
+- `README.md`: Markdown file with an overview and general information about the dataset.
+
+## regard_result Directory
+- `allenai_OLMo-1B_bias.txt`: Text file containing bias analysis results for the AllenAI OLMo-1B model.
+- `allenai_OLMo-7B-Twin-2T_bias.txt`: Text file containing bias analysis results for the AllenAI OLMo-7B-Twin-2T model.
+- `allenai_OLMo-7B_bias.txt`: Text file containing bias analysis results for the AllenAI OLMo-7B model.
+- `lmsys_vicuna-13b-v1.5_bias.txt`: Text file containing bias analysis results for the LMSys Vicuna-13B-v1.5 model.
+- `lmsys_vicuna-7b-v1.5_bias.txt`: Text file containing bias analysis results for the LMSys Vicuna-7B-v1.5 model.
+- `openlm-research_open_llama_13b_bias.txt`: Text file containing bias analysis results for the OpenLM-Research Open Llama 13B model.
+- `openlm-research_open_llama_3b_v2_bias.txt`: Text file containing bias analysis results for the OpenLM-Research Open Llama 3B v2 model.
+- `openlm-research_open_llama_7b_v2_bias.txt`: Text file containing bias analysis results for the OpenLM-Research Open Llama 7B v2 model.
+- `tiiuae_falcon-7b_bias.txt`: Text file containing bias analysis results for the TIIUAE Falcon-7B model.
+
+## Root Directory
+- `.gitignore`: Git ignore file specifying files and directories ignored by Git.
+- `LICENSE`: License file for the project.
+- `README.md`: Main readme file with an overview and instructions for the project.
+- `job.sh`: Command templates, used to run prompt.py script for different models.
+- `official_paper.pdf`: PDF version of the original research paper.
+- `prompt.py`: Python script for prompting LLMs.
+- `requirements.txt`: Python libraries.
 
 # Results and evaluation (in progress)
 ...
