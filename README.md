@@ -180,7 +180,11 @@ The codebase of this project is structured as below:
 - `requirements.txt`: Python libraries.
 
 # Results and evaluation (in progress)
-...
+
+## Language Polarity towards Technical Occupations
+![Occupational Bias Result](./asset/paper_result.png)
+Overall, all selected models exhibit a difference of positive scores less than 0. This shows that all models are biased in generating more positive responses for prompts for technical jobs than creative ones. While negative scores are insignificant (less than 0.05), most of the negative scores are positive, meaning that these models also give more negative responses for creative jobs than technical ones. 
+
 
 # Future work
 This research serves as a starting point for further investigations into the root causes of bias in language models and the development of strategies to build more equitable and socially responsible AI systems. By fostering interdisciplinary collaborations between computer scientists, social scientists, and domain experts, we can work towards creating language models that truly reflect the diversity and richness of human experiences, free from the constraints of historical biases and prejudices. Ultimately, the goal should be to harness the immense potential of LLMs while ensuring that their outputs align with societal values of fairness, inclusivity, and respect for all individuals and communities, regardless of their chosen profession or creative pursuits.
